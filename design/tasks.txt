@@ -1,0 +1,28 @@
+Web Application:
+1. User - CRUD, Login
+2. UserGroup - CRUD
+3. UserPrivilege - CRUD
+4. Settings - CRUD
+5. Recepie - CRUD, Search - category, ingridient, preparation time, creation date
+6. RecepieComment - CRUD
+7. Ingridient - CRUD
+8. Shopping list 
+
+Web Service:
+1. User login (username, password)
+2. Get Recepie(id, creation date, ingridients, preparation, category, rating, has_photo)
+4. Create Recepie()
+5. Add Comment()
+6. get/save shopping list
+
+Mobile App:
+1. Login
+2. Recepie CRUD - Search - category, ingridient, preparation time
+4. Social Network Sharing: Facebook, Twitter
+5. Take photo
+6. Create Shopping List
+7. Class for communication with the server -calls the web service
+8. Read/Save user settings on the phone
+
+
+*CRUD = Create, Read, Update, Delete - Operations for managing database data

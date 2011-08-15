@@ -1,0 +1,46 @@
+System Overview
+
+
+The system is social networking portal for sharing cooking recepies.
+The users can view, add, comment, rate, search recepies and create shopping lists. The whole content can be acccessed via a web page or a mobile application. The web page and the mobile application have the same functionalities. The web page will have a web service which enables communication with other systems. The mobile application will be made as a web application so it can run on various smartphones.
+
+The basic functionality which the application has together with the different types of users is shown on the User use-case diagram (system/user.png). The system has three types of users: users, authenticated users and administrators.
+
+The component (system/component.png) and the deployment (deployment.png) diagrams show the system components and the place of their deoployment. The whole system has four major components:
+web application, web service, database and mobile application. The web application and the web service are deployed on a web server, the database on a database server and the mobile web appplication on a smartphone. The web server and the database server can be placed on a single machine.
+
+The domain model (system/domain-model.png) shows all system entities and their relations. As it can be seen on the figure, the Recepie has central place in the system. The Recepie can be in grouped with other recepies in RecepieCategory e.g. soup, main courses, salads..., the preparation has different PreparationStep(s) and for preparation we need different Ingridient(s) e.g. tuna, pork, potatos, tomatos, peppers... The Ingridient(s) are measured in different UnitMeasure(s) and can be grouped in different IngridientGroup(s) e.g. vegetables, fruits, meat...
+The User(s) are grouped in different UserGroup(s) e.g. authenticated user, administrator... and each UserGroup have different UserPrivilege(s). Each User can post new Recepie(s), post RecepieComment(s) on exsisting Recepie(s) and create ShoppingList(s) based on the chosen Recepie(s).
+
+
+
+Techologies Used
+
+The system uses standard well know web techologies.
+For the web applcaiton and the web service Fuel MVC PHP [1] Framework is used. It's a fast 
+The mobile web application will be developed using jQuery [2], jQueryMobile[3] and PhoneGap[4]. jQuery will be used for communication with the web service, jQueryMobile for developing the user interface of the mobile web application and PhoneGap for accessing smartphone hardware and packaging the applications for different mobile platforms (Android, iPhone, BlackBerry...)
+MySQL will be used as a database server.
+
+
+Development Tools
+
+Because not all of us own a smartphone the Android SDK[5] and PhoneGap build for Android will be used for development and testing of the mobile app. Any IDE with code highliting can be used for the development, but I suggest Eclipse[6] to be used because it has the best Android SDK tools and Android has a good emulator.
+For the web application testing and development on Windows WAMP[8] can be used. It is a bundle of Apache Web Server, MySQL and PHP.
+
+The whole development will be done in parallel. There will be two teams one working on the web applocation and the other on the mobile applicaiton.
+For the web applicaition we can find some interesting template. 
+
+
+References
+[1] http://fuelphp.com
+[2] http://jquery.com/
+[3] http://jquerymobile.com/
+[4] http://www.phonegap.com
+[5] http://mysql.com
+[6] http://developer.android.com
+[7] http://eclipse.org
+[8] http://www.wampserver.com/en/
+
+
+
+
